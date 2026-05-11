@@ -1,0 +1,5 @@
+PS D:\ibm_backend\expressBookReviews\final_project> $loginData = '{\"username\":\"Aman\",\"password\":\"pass123\"}'
+PS D:\ibm_backend\expressBookReviews\final_project> curl.exe -X POST -H "Content-Type: application/json" -d $loginData -c cookies.txt http://localhost:5000/customer/login
+User successfully logged in
+PS D:\ibm_backend\expressBookReviews\final_project> curl.exe -X PUT -b cookies.txt "http://localhost:5000/customer/auth/review/1?review=This%20book%20is%20a%20masterpiece"
+The review for the book with ISBN 1 has been added/updated.

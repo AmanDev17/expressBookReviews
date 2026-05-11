@@ -1,0 +1,3 @@
+PS D:\ibm_backend\expressBookReviews\final_project> $data = '{\"username\":\"Aman\",\"password\":\"pass123\"}'
+PS D:\ibm_backend\expressBookReviews\final_project> curl.exe -X POST -H "Content-Type: application/json" -d $data http://localhost:5000/register
+{"message":"User successfully registered. Now you can login"}
